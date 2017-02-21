@@ -1,4 +1,4 @@
-ans = open("B-small-practice.out", 'w')
+ans = open("C-large-practice.out", 'w')
 
 letters = {
 	'2': 'abc',
@@ -12,10 +12,10 @@ letters = {
 	'0': ' '
 }
 
-with open("C-small-practice.in") as f:
+with open("C-large-practice.in") as f:
 	no_test_cases = int(f.readline())
 	for k in range(1, no_test_cases+1):
-		sentences = list(f.readline().strip())
+		sentences = list(f.readline().strip("\n"))
 		lst = []
 		prev_key = ""
 		for letter in sentences:
